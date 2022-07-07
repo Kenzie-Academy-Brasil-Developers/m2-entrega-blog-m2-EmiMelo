@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>m2-entrega-blog-m2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/base.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
 </head>
+
 <body>
-  
+  <header>
+    <div class="div_usuario">
+      <img src="./src/assets/img_avatar/image 1.svg" alt="Perfil do Usuário" class="perfil_usuario_logado">
+      <h3>GatinhoFofo</h3>
+    </div>
+    <div class="div_logout">
+      <button class="btn_logout">Logout</button>
+    </div>
+  </header>
+  <main>
+    <form class="container_message">
+      <textarea name="text" id="text" cols="30" rows="10" style="resize: none;"
+        placeholder="Comece o seu post incrível!"></textarea>
+      <button class="btn_add_text">+</button>
+    </form>
+    <ul class="container_list_message">
+      <li class="post_message">
+        <div><img src="./src/assets/img_avatar/image 1.svg" alt="Perfil do Usuário"></div>
+        <div class="post_text">
+          <h3>GatinhoFofo</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eos perferendis excepturi maxime? Sint quod
+            culpa nulla vitae neque maxime rerum delectus! Accusantium laborum totam praesentium sit ea expedita autem?
+          </p>
+        </div>
+        <div class="post_btn">
+          <button class="btn_edit">Editar</button>
+          <button class="btn_delete">Apagar</button>
+          <span class="date">05/02/2022</span>
+        </div>
+      </li>
+      <li class="post_message">
+        <div><img src="./src/assets/img_avatar/image 1.svg" alt="Perfil do Usuário"></div>
+        <div class="post_text">
+          <h3>GatinhoFofo</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eos perferendis excepturi maxime? Sint quod
+            culpa nulla vitae neque maxime rerum delectus! Accusantium laborum totam praesentium sit ea expedita autem?
+          </p>
+        </div>
+        <div class="post_btn">
+          <button class="btn_edit">Editar</button>
+          <button class="btn_delete">Apagar</button>
+          <span class="date">05/02/2022</span>
+        </div>
+      </li>
+      <li class="post_message">
+        <div><img src="./src/assets/img_avatar/image 1.svg" alt="Perfil do Usuário"></div>
+        <div class="post_text">
+          <h3>GatinhoFofo</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eos perferendis excepturi maxime? Sint quod
+            culpa nulla vitae neque maxime rerum delectus! Accusantium laborum totam praesentium sit ea expedita autem?
+          </p>
+        </div>
+        <div class="post_btn">
+          <button class="btn_edit">Editar</button>
+          <button class="btn_delete">Apagar</button>
+          <span class="date">05/02/2022</span>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <!-- <div class="modal">
+    <div class="container">
+      <div class="modal__inner">
+        <button class="btn_close">x</button>
+        <h2>Cadastro</h2>
+        <form class="modal__form">
+          <input type="text" name="username" id="username" placeholder="Nome de usuário">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="text" name="perfil" id="perfil" placeholder="Foto de perfil">
+          <input type="password" name="password" id="password" placeholder="Senha">
+          <button class="btn_register">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="modal">
+    <div class="container">
+      <div class="modal__inner">
+        <button class="btn_close">x</button>
+        <h2>Login</h2>
+        <form class="modal__form">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" name="password" id="password" placeholder="Senha">
+          <button class="btn_login">Login</button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
 </body>
+
 </html>

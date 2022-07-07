@@ -1,0 +1,255 @@
+/* outline: 0; */
+body {
+    font-family: var(--font-montserrat);
+    background-color: rgba(var(--color-grey-light), 1);
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(var(--color-blue), 1);
+    padding: 0.313rem 0rem;
+}
+
+main {
+    margin-bottom: 2.5rem;
+}
+
+.div_usuario {
+    display: flex;
+    margin-left: 1.25rem;
+}
+
+.perfil_usuario_logado {
+    width: 3.125rem;
+    margin-right: 0.625rem;
+}
+
+.div_usuario>h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    align-self: center;
+    color: rgba(var(--color-perfil-logado), 1);
+}
+
+.div_logout {
+    display: flex;
+    margin-right: 2.5rem;
+}
+
+.btn_logout {
+    background-color: rgba(var(--color-yellow), 1);
+    color: rgba(var(--color-white), 1);
+    font-size: 1.125rem;
+    font-weight: 400;
+    border-radius: 0.313rem;
+    padding: 0.313rem 0.938rem;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_logout:hover {
+    background-color: rgba(var(--color-red), 1);
+}
+
+.container_message {
+    width: 37.5rem;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    position: relative;
+}
+
+#text {
+    padding: 1.25rem 0rem 0rem 1.25rem;
+    outline: 0;
+    border-radius: 0.313rem;
+    box-shadow: 1px 3px 5px rgba(63, 62, 62, 0.305);
+    height: 6.25rem;
+    width: 36.25rem;
+}
+
+.btn_add_text {
+    background-color: rgba(var(--color-yellow), 1);
+    color: rgba(248, 231, 231, 1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0.313rem;
+    padding: 0rem 0.313rem;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+    margin: 0rem 0.625rem 0.625rem 0rem;
+}
+
+.btn_add_text:hover {
+    background-color: rgba(var(--color-green), 1);
+}
+
+.container_list_message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.25rem;
+    width: 37.5rem;
+    margin-top: 2.5rem;
+}
+
+.post_message {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(var(--color-white), 1);
+    padding: 1.25rem 2.5rem 1.25rem 1.25rem;
+    box-shadow: 1px 3px 5px rgba(63, 62, 62, 0.305);
+    border-radius: 0.313rem;
+    gap: 1.875rem;
+}
+
+.post_text>h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.post_text>p {
+    padding-bottom: 1.25rem;
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.post_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.625rem;
+    font-size: 0.75rem;
+}
+
+.btn_edit {
+    color: rgba(var(--color-blue), 1);
+    background-color: rgba(var(--color-white), 1);
+    cursor: pointer;
+}
+
+.btn_edit:hover {
+    text-decoration: underline;
+    color: rgb(1, 82, 233);
+}
+
+.btn_delete {
+    color: rgba(var(--color-red), 1);
+    background-color: rgba(var(--color-white), 1);
+    cursor: pointer;
+}
+
+.btn_delete:hover {
+    text-decoration: underline;
+    color: rgb(229, 13, 13);
+}
+
+.date {
+    color: rgba(var(--color-grey), 1);
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(var(--color-black), 0.65);
+}
+
+.modal>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.modal__inner {
+    background-color: rgba(var(--color-blue), 1);
+    width: 25rem;
+    max-width: 100%;
+    height: 24rem;
+    border-radius: 0.313rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 2.188rem;
+}
+
+.btn_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.25rem 1.25rem 0rem 0rem;
+    font-size: 1.75rem;
+    background-color: rgba(var(--color-blue), 1);
+    color: rgba(var(--color-white), 1);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_close:hover {
+    color: rgba(var(--color-red), 1);
+}
+
+.modal__inner>h2 {
+    color: rgba(var(--color-white), 1);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.938rem;
+}
+
+.modal__form>input {
+    padding: 0.625rem 2.5rem 0.625rem 0.938rem;
+    border-radius: 0.313rem;
+    background-color: rgba(var(--color-grey-light), 1);
+    font-size: 0.813rem;
+    outline: 0;
+}
+
+.btn_register {
+    background-color: rgba(var(--color-yellow), 1);
+    color: rgba(var(--color-white), 1);
+    border-radius: 0.313rem;
+    align-self: center;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_register:hover {
+    background-color: rgba(var(--color-green), 1);
+}
+
+.btn_login {
+    background-color: rgba(var(--color-yellow), 1);
+    color: rgba(var(--color-white), 1);
+    border-radius: 0.313rem;
+    align-self: center;
+    padding: 0.625rem 2.5rem;
+    margin-top: 0.625rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_login:hover {
+    background-color: rgba(var(--color-green), 1);
+}

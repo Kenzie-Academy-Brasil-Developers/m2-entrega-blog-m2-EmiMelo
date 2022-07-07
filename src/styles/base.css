@@ -1,0 +1,15 @@
+:root {
+    --color-white: 255, 255, 255;
+    --color-black: 27, 28, 30;
+
+    --color-blue: 100, 149, 237;
+    --color-yellow: 237, 188, 100;
+    --color-red: 237, 100, 100;
+    --color-grey: 152, 152, 152;
+    --color-grey-light: 243, 243, 243;
+    --color-perfil-logado: 250, 250, 250;
+    --color-green: 102, 216, 151;
+
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
