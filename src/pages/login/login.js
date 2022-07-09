@@ -13,7 +13,7 @@ btnLogin.addEventListener("click", async (event) => {
 })
 
 btnClose.addEventListener("click", () => {
-    window.location.href = "../register/index.html"
+    window.location.href = "../../../index.html"
 })
 
 

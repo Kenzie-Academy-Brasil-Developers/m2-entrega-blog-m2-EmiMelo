@@ -36,7 +36,7 @@ export default class User {
     }
     static redirectionHomepage(token, error) {
         if (token !== undefined) {
-            window.location.href = "../../../homepage.html"
+            window.location.href = "../../pages/homepage/homepage.html"
         }
         else {
             alert(`${error.message}`)
@@ -45,7 +45,7 @@ export default class User {
 
     static redirectionLogin(user) {
         if (user.id !== undefined) {
-            window.location.href = "../login/login.html"
+            window.location.href = "./src/pages/login/login.html"
         }
         else {
             alert(`${user.message}`)

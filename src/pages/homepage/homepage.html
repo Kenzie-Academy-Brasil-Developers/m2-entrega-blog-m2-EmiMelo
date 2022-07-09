@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../assets/logo_svg/Logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="../../styles/base.css">
+  <link rel="stylesheet" href="./homepage.css">
+  <title>Blog Kenzie</title>
+</head>
+
+<body>
+  <header>
+    <div class="div_usuario">
+      <img src="" alt="Perfil do Usuário" class="perfil_usuario_logado">
+      <h3 class="name_user"></h3>
+    </div>
+    <div class="div_logout">
+      <button class="btn_logout">Logout</button>
+    </div>
+  </header>
+  <main>
+    <form class="container_message">
+      <textarea name="text" id="text" cols="30" rows="10" style="resize: none;"
+        placeholder="Comece o seu post incrível!"></textarea>
+      <button class="btn_add_text">+</button>
+    </form>
+    <ul class="container_list_message"></ul>
+  </main>
+
+  <div class="modal">
+    <div class="container">
+      <div class="modal__inner">
+        <button class="btn_close">x</button>
+        <form class="modal__form">
+          <textarea name="text" id="text_edit" cols="30" rows="10" style="resize: none;"
+            placeholder="Edite aqui o seu post!"></textarea>
+          <button class="btn_edit_post">Editar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./homepage.js"></script>
+</body>
+
+</html>

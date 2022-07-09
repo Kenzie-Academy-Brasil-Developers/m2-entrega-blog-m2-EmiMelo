@@ -1,5 +1,5 @@
 import Posts from "../controllers/posts.controller.js"
-import editaPost from "../script.js"
+import editaPost from "../pages/homepage/homepage.js"
 
 export default class CardPost {
 
