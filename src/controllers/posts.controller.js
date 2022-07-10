@@ -1,3 +1,5 @@
+
+
 export default class Posts {
 
     static urlAllPosts = "https://blog-m2.herokuapp.com/posts?page="
