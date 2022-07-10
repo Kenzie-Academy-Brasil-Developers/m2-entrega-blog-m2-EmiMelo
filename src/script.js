@@ -11,6 +11,4 @@ btnRegister.addEventListener("click", async (event) => {
     event.preventDefault()
     const newUsuario = new RegisterUser(inputUsername.value, inputEmail.value, inputFotoDePerfil.value, inputPassword.value)
     console.log(await User.register(newUsuario))
-
-
 })
