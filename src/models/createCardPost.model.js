@@ -52,7 +52,7 @@ export default class CardPost {
             })
 
             img.src = post.user.avatarUrl
-            img.alt = `Foto de Perfil de ${post.user.username}`
+            img.alt = "Foto de Perfil do usuário"
 
             h3.innerText = post.user.username
             p.innerText = post.content

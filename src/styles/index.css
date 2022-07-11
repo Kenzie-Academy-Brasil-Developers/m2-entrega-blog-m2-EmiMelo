@@ -86,7 +86,14 @@ header {
     font-size: 0.813rem;
     outline: 0;
     align-self: center;
-    width: 44vw;
+    width: 50vw;
+}
+
+@media screen and (min-width: 400px) {
+
+    .modal__form>input {
+        width: 44vw;
+    }
 }
 
 @media screen and (min-width: 470px) {
@@ -114,6 +121,7 @@ span {
     margin-top: 0.313rem;
     font-size: 0.75rem;
     color: rgba(var(--color-white), 1);
+    text-align: center;
 }
 
 span>a {

@@ -21,11 +21,23 @@ main {
     margin-left: 1.25rem;
 }
 
-.div_usuario>img {
-    width: 3.375rem;
-    height: 3.438rem;
+.div_img {
+    background-color: white;
     border-radius: 50%;
-    margin-right: 0.625rem;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.313rem;
+}
+
+.div_img>img {
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.perfil_user {
+    width: 70px;
 }
 
 .perfil_user>img {
@@ -43,7 +55,7 @@ main {
 
 .div_logout {
     display: flex;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
 }
 
 .btn_logout {
@@ -63,19 +75,63 @@ main {
 }
 
 .container_message {
-    width: 37.5rem;
     margin: 0 auto;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 1.25rem;
     position: relative;
 }
 
 #text {
-    padding: 1.25rem 0rem 0rem 1.25rem;
+    padding: 1.25rem 0em 0rem 0rem;
     outline: 0;
     border-radius: 0.313rem;
-    box-shadow: 1px 3px 5px rgba(63, 62, 62, 0.305);
+    box-shadow: 1px 3px 5px rgb(63 62 62 / 31%);
     height: 6.25rem;
-    width: 36.25rem;
+    width: 100%;
+}
+
+.container_list_message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 1.25rem;
+    height: 35.5rem;
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 590px) {
+
+    .div_logout{
+        margin-right: 2.5rem;
+    }
+
+    .container_message {
+        width: 37.5rem;
+        margin: 0 auto;
+        margin-top: 1.25rem;
+        position: relative;
+    }
+
+    #text {
+        padding: 1.25rem 0rem 0rem 1.25rem;
+        outline: 0;
+        border-radius: 0.313rem;
+        box-shadow: 1px 3px 5px rgba(63, 62, 62, 0.305);
+        height: 6.25rem;
+        width: 36.25rem;
+    }
+
+    .container_list_message {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1.25rem;
+        width: 37.5rem;
+        margin-top: 2.5rem;
+    }
 }
 
 .btn_add_text {
@@ -97,14 +153,6 @@ main {
     background-color: rgba(var(--color-green), 1);
 }
 
-.container_list_message {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    gap: 1.25rem;
-    width: 37.5rem;
-    margin-top: 2.5rem;
-}
 
 .post_message {
     display: flex;
@@ -118,7 +166,6 @@ main {
 
 .post_text {
     width: 21.514rem;
-    height: 8.386rem;
 }
 
 .post_text>h3 {
